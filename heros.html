@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Heros-Bootstrap</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.shadow{
+			box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
+		    background-color: rgba(0, 0, 0, .1);
+		    height: 3rem;
+		    border: solid rgba(0, 0, 0, .15);
+		    border-width: 1px 0;
+		}
+		.main{
+			box-sizing: border-box;
+		}
+		.container{
+			text-align: center;			
+		    margin: 5em auto;
+		    width: 50%;
+		}
+		h1{
+		    margin: 10px auto;
+		    font-weight: 900 !important;
+		    font-size: 3em;		
+		}
+		p{			
+		    font-size: 1.25em;
+		    line-height: 30px;
+		}
+		.btn{
+		    margin: 15px auto;
+		}
+		.btn-type{			
+		    /*padding: 0px 10px;*/
+		    height: 40px;
+		    width: 10em;
+		    font-size: inherit;
+		    background-color: blue;
+		    color: white;
+		    border: none;
+		    border-radius: 5px;
+		    cursor: pointer;
+		}
+		.btn-type:hover{
+			background-color: #0e0e95;
+			/*color: white;*/
+		}
+		.btn-type2{			
+		    height: 40px;
+		    width: 9em;
+		    border: 1px solid gray;
+		    border-radius: 5px;
+		    background-color: transparent;
+		    cursor: pointer;
+		    font-size: initial;
+		    color: #b1aaaa;
+		}
+		.btn-type2:hover{
+			background-color: gray;
+			color: white;
+		}
+		.sub-container2{
+		    text-align: center;
+		    margin: 5em auto;
+		    width: 50%;
+		}
+		.img-type{	    	
+		    margin-top: 3em;
+	     	margin-bottom: -5em; 
+		    max-height: 30vh;
+		    overflow: hidden;
+		    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+		}
+		.container2{
+		    border-bottom: 1px solid #dbd6d6;
+		    margin-bottom: 4em;
+		}
+		.sub-container3{			
+		    box-sizing: border-box;
+		    display: flex;
+		    flex-direction: row-reverse;
+		    margin: 5em;
+		    align-items: center;
+		}
+		
+		.img-type2{
+			width: 50%;
+		}
+		.left{
+			width: 50%;
+		}
+		.container4{
+			margin: 5em;
+			display: flex;
+		}
+		.sub-container4{
+			width: 50%;
+		}
+		.form-type{
+			width: 50%;			
+		    background-color:#e2e7e757;
+		    margin-left: 8em;
+		    border: 1px solid #d7d1d1;
+		    border-radius: 5px;
+		}
+		form{			
+		    /*max-width: 20em;*/
+		    margin: auto;
+		}
+		.input-type{
+		    margin: auto;
+		    width: 50%;
+		    line-height: 69px;
+		    margin-top: 30px;
+		}
+		.input-type input{
+			border-radius: 5px;
+		    width: 20em;
+		    height: 3em;
+		    padding: 5px;
+		    border: 1px solid #bdb6b6;
+		    marrgin-top: 20px;
+		}
+		.checkbox{
+			    margin: 10px 0px 10px 126px;
+		}
+		.input-type button{
+		    width: 21em;
+		 	height: 3em;			 	
+		    background-color: blue;
+		    border: none;
+		    border-radius: 5px;
+		    color: white;
+		}
+		.container5{			
+		    display: flex;
+		    margin: 5em;
+		    /*border: 1px solid gray;*/
+		    padding: 4em 0px 1em 4em;
+		        /*width: 100%;*/
+	        box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+	        border-radius: 10px;
+		}
+		.sub-container5{
+			width: 50%;
+		}
+		.img-type3{
+			width: 37%;
+		    overflow: hidden;
+			margin-left: 10em;
+			box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+		    margin-bottom: -1em;
+	       	border-top-left-radius: 10px;
+		}
+		.dark-cant{
+			background-color: black;
+		  /*  margin: 0px;
+		    padding: 0px;
+		    margin-top: -10px;*/
+		    padding: 5em 0px;
+		}
+		.dark-cant .container{
+			margin: 0px auto;
+			color: white;
+		}
+		.btn3{
+			height: 40px;
+		    width: 10em;
+		    font-size: inherit;
+		    background-color: transparent!important;
+		    color: white;
+		    border: none;
+		    border-radius: 5px;
+		    cursor: pointer;		    
+		    border: 1px solid #00fffd;
+		    color: #00fffd;
+		    margin-right: 12px;
+		}
+		.btn3:hover{
+			background-color: #00fffd!important;
+			color: black;
+		}
+		.btn4{
+			height: 40px;
+		    width: 10em;
+		    font-size: inherit;
+		    background-color: transparent;
+		    color: white;
+		    /*border: none;*/
+		    border-radius: 5px;
+		    cursor: pointer;		    
+		    border: 1px solid white;
+		    color: white;
+		}
+		.btn4:hover{
+			background-color: white;
+			color: black;
+		}
+
+		    
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="container">
+			<div class="sub-container">
+				<img src="img/images.png" alt="bootstrap" height="57" width="72">
+				<h1>Centered hero</h1>
+				<p>										
+					Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+				</p>
+			</div>
+			<div class="btn">
+				<button type="button" class="btn-type">Primary button</button>
+				<button type="button" class="btn-type2">Secondary</button>
+			</div>			
+		</div>
+		<div class="shadow"></div>
+
+		<div class="container2">
+			<div class="sub-container2">
+				<h1>Centered screenshot</h1>
+				<p>
+					Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+				</p>
+				<div class="btn">
+					<button type="button" class="btn-type">Primary button</button>
+					<button type="button" class="btn-type2">Secondary</button>
+				</div>
+				<div class="img-type">
+					<img src="img/bootstrap.png" width="700" height="500">
+				</div>
+			</div>			
+		</div>
+		<div class="shadow"></div>
+
+		<div class="container3">
+			<div class="sub-container3">
+				<div class="img-type2">
+					<img src="img/bootstrap-themes.png" width="600" height="350">
+				</div>
+				<div class="left">
+					<h1>Responsive left-aligned hero with image</h1>
+					<p>
+						Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+					</p>
+					<div class="btn">
+						<button type="button" class="btn-type">Primary</button>
+						<button type="button" class="btn-type2">Secondary</button>
+					</div>
+				</div>				
+			</div>			
+		</div>
+		<div class="shadow"></div>
+
+		<div class="container4">
+			<div class="sub-container4">
+				<h1>Vertically centered hero sign-up form</h1>
+				<p>
+					Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.
+				</p>
+			</div>
+			<div class="form-type">
+				<form>
+					<div class="input-type">
+						<input type="text" name="email" value="Email Addrss">
+						<input type="text" name="Password" value="Password">
+					</div>
+					
+					<div class="checkbox">
+						<input type="checkbox" name="check" value="checkbox" id="check">
+						<label for="check" style="font-size: 20px;;">Remember me</label>
+						
+					</div>
+					<div class="input-type" style="margin-top: -4px;">
+						<button type="button" >Sign-up</button>
+					</div>
+					<hr>
+					<p style="font-size: inherit; text-align: center; margin: 15px 0px 15px 0px;color: #878080;">
+    									
+				    By clicking Sign up, you agree to the terms of use.
+					</p>
+				</form>
+			</div>			
+		</div>
+		<div class="shadow"></div>
+		<div class="container5">
+			<!-- <div class="border"> -->
+				<div class="sub-container5">
+					<h1>Border hero with cropped image and shadows</h1>
+					<p>
+						Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+					</p>
+					<div class="btn">
+						<button type="button" class="btn-type">Primary</button>
+						<button type="button" class="btn-type2">Default</button>				
+					</div>					
+				</div>
+				<div class="img-type3">
+					<img src="img/bootstrap.png" width="800" height="500">
+				</div>
+
+			<!-- </div>						 -->
+		</div>
+		<div class="shadow"></div>
+		<div class="dark-cant">
+			<div class="container">
+				<div class="sub-container">
+					<h1>Dark mode hero</h1>
+					<p>
+						Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+					</p>
+					<div class="btn">
+						<button type="button" class="btn3">Custom button</button>
+						<button type="button" class="btn4">Secondary</button>	
+					</div>
+				</div>
+			</div>
+		</div>		
+		<div class="shadow"></div>
+	</div>
+</body>
+</html>

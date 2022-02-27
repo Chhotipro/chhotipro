@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dropdowns</title>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.shadow{
+			height: 3em;
+			background-color: rgba(0, 0, 0, .1);
+			border: 1px solid #c7bebe;
+			border-width: 1px 0;
+			box-shadow: inset 0 0em 1.5em #b9adad;
+		}
+		.container{
+			margin: 3em auto;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		}
+		.drop-down-list{
+			background-color: white;			
+			border: 1px solid gray;
+			border-radius: 10px;
+			height: 150px;
+			width: 200px;
+			list-style: none;
+		    padding: 15px;
+		    line-height: 30px;
+		    font-size: 18px;
+		    margin-right: 40px;
+		    box-shadow: 0 .5em 1em rgba(0, 0, 0, .15)!important;
+		}
+		.drop-down-list a{
+			text-decoration: none;
+			color: white;
+		}
+		.drop-down-list li:hover{
+			background-color: #d7d7db;
+			border-radius: 5px;
+		}
+		.drop-down-list li{
+			padding-left: 10px;
+			margin: 5px;
+		}
+		.drop-down-list2{
+		    /*height: 150px;*/
+		    width: 270px;
+		    border: 1px solid #80808063;		    
+		    list-style: none;
+		    line-height: 35px;		   
+		    /*padding: 15px;*/
+		    background-color: white;
+		    margin-right: 40px;
+		    border-radius: 5px;
+		     font-size: 18px;
+	      	box-shadow: 0 .5em 1em rgba(0, 0, 0, .15)!important;	      
+		}
+		.drop-down-list2 a{
+			text-decoration: none;
+			color: white;
+		}
+		.drop-down-list2 li:hover{
+			background-color: #d7d7db;
+			/*border-radius: 5px;*/
+		}
+		.drop-down-list2 li{
+			padding-left: 10px;			
+			margin: 10px 0px;	  		
+		}
+		.drop-down-list2 div input{
+		    width: 90%;
+		    padding: 10px 0px 10px 5px;
+		    margin-bottom: 10px;
+		    border-radius: 5px;
+		    border: 1px solid gray;
+		    margin: 10px;
+		}	
+		.dot{
+		    margin-right: 5px;
+		    height: 10px;
+		    width: 10px;
+		    border-radius: 50%;
+		    display: inline-block;
+		}
+		.drop-down-list3{
+		    background-color: white;
+		    width: 220px;
+		    border: 1px solid #d3caca82;
+		    border-radius: 5px;		   
+		    margin-right: 25px;
+		    /*line-height: 30px;*/
+		    list-style: none;
+		    font-size: 18px;
+		  	box-shadow: 0 .5em 1em rgba(0, 0, 0, .15)!important;	
+		  	padding: 10px 0;  
+
+		}
+		.drop-down-list3 a{
+			text-decoration: none;
+			color: #c9bcbc;
+			 padding: 5px;
+		}
+		.drop-down-list3 li:hover{
+			background-color: #d7d7db;	
+			/*width: 100%;		*/
+		}
+		.drop-down-list3 li{
+			 padding: 5px 0px 8px 15px;		
+		}
+		.drop-down-list3 span{			
+			margin-right: 10px;			
+		}	
+		.container4{
+			margin: 3em auto;	    
+			/*display: grid;
+			justify-content: center;*/
+		}
+		.grid1{			
+		    margin: auto;
+		    width: 25%;
+	     	text-align: center; 
+	     	 box-shadow: 0 .5em 1em rgba(0, 0, 0, .15)!important;
+	      	border: 1px solid #80808063; 	      	
+		}
+		.week-days{	
+			display: grid;	
+			grid-template-columns: repeat(7, auto);
+			row-gap: 10px;	
+		    color: gray;
+	        padding: 20px;      
+ 
+		}
+		 .btn-type{
+		 	border: none;
+		 	background-color: transparent;
+		 	font-weight: 800;
+		 	cursor: pointer;
+		 	padding: 10px;
+		 }
+		 .font-item{
+		 	display: flex;
+    		justify-content: space-between;
+    		padding: 20px 35px 0px 35px;
+		 }
+		 .btn-type:hover {
+	 	    background-color: #d5cece;
+		    /*height: 30px;*/
+		    border-radius: 5px;
+		 }
+		 .container5{
+		 	margin: 3em auto;
+		    display: flex;		    
+		    justify-content: flex-start;
+	        border: 1px solid #ddd3d3b8;
+		    height: 100px;
+		    width: 450px;
+		    padding:25px;
+		    box-shadow: 0 .5em 1em rgba(0, 0, 0, .15)!important;
+		    border-radius: 5px;
+		 }
+		  .container5 ul{
+	  	    list-style: none;
+		 	font-size: 18px;
+	 	    width: 100%;
+		  }
+		  .container5 ul a{
+		  	text-decoration: none;
+		  	color: black;
+		  	font-weight: 800;
+		  }
+		  .container5 ul a:hover{
+		  	color: blue;		  	
+		  }
+		  .container5 ul li:hover{
+		  	background-color:#efebeb2e ;
+		  }		 
+		  .btn-type:focus{
+		  	border: 2px solid orange;
+		  	border-radius: 5px;
+		  	background-color: #ddd3d3b8;
+		  }
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="container">
+			<ul class="drop-down-list">
+				<li style="background-color:blue;border-radius: 5px;"><a href="#" style="color:black">
+					Action
+				</a></li>
+				<li><a href="#" style="color:black">Another action</a></li>
+				<li><a href="#" style="color:black">Something else action</a></li>
+				<hr>
+				<li><a href="#" style="color:black">Seprated link</a></li>
+			</ul>
+			<ul class="drop-down-list" style="background-color:black;">
+				<li  style="background-color:blue;border-radius: 5px;"><a href="#">
+					Action
+				</a></li>
+				<li><a href="#">Another action</a></li>
+				<li><a href="#">Something else action</a></li>
+				<hr>
+				<li><a href="#">Seprated link</a></li>
+			</ul>
+		</div>
+		<div class="shadow"></div>
+		<div class="container">			
+			<ul class="drop-down-list2">
+				<div style="background-color: #a59f9f1a;">
+					<input type="text" name="text" placeholder="Type to filter...">
+				<hr>
+				</div>				
+				<li><a href="#" style="color:black;">
+					<span class="dot" style="background-color:green;"></span>
+					Action
+				</a></li>
+				<li><a href="#" style="color:black">
+					<span class="dot" style="background-color:blue;"></span>
+					Another action
+				</a></li>
+				<li><a href="#" style="color:black">
+					<span class="dot" style="background-color:red;"></span>
+					Something else action
+				</a></li>		
+				<li><a href="#" style="color:black">
+					<span class="dot" style="background-color:skyblue;"></span>
+					Seprated link
+				</a></li>
+			</ul>
+			<ul class="drop-down-list2" style="background-color:black;">
+				<div style="background-color: #a59f9f1a;">
+					<input type="text" name="text" style="background-color: #161111;border: 1px solid #3a3737;" placeholder="Type to filter...">
+				<hr>
+				</div>				
+				<li><a href="#">
+					<span class="dot" style="background-color:green;"></span>
+					Action
+				</a></li>
+				<li><a href="#">
+					<span class="dot" style="background-color:blue;"></span>
+					Another action
+				</a></li>
+				<li><a href="#">
+					<span class="dot" style="background-color:red;"></span>
+					Something else action
+				</a></li>				
+				<li><a href="#">
+					<span class="dot" style="background-color:skyblue;"></span>
+					Seprated link
+				</a></li>
+			</ul>
+		</div>
+		<div class="shadow"></div>
+		<div class="container">
+			<ul class="drop-down-list3" style="color:black">
+				<li><a href="#" style="color:black">
+					<span><i class="fad fa-book"></i></span>
+					Documents
+				</a></li>
+
+				<li><a href="#" style="color:black">
+					<span><i class="far fa-photo-video"></i></span>
+					Potos
+				</a></li>
+				<li><a href="#" style="color:black">
+					<span><i class="fas fa-film-alt"></i></span>
+					Movies
+				</a></li>				
+				<li><a href="#" style="color:black">
+					<span><i class="fas fa-music"></i></span>
+					Music
+				</a></li>
+				<li><a href="#" style="color:black">
+					<span><i class="fas fa-chess-king-alt"></i></span>
+					Games
+				</a></li>
+				<hr>
+				<li class="trash"><a href="#" style="color:red;">
+					<span><i class="fas fa-trash-alt"></i></span>
+					Trash
+				</a></li>
+			</ul>
+			<ul class="drop-down-list3" style="background-color:black;">
+				<li><a href="#">
+					<span><i class="fad fa-book"></i></span>
+					Documents
+				</a></li>
+
+				<li><a href="#">
+					<span><i class="far fa-photo-video"></i></span>
+					Potos
+				</a></li>
+				<li><a href="#">
+					<span><i class="fas fa-film-alt"></i></span>
+					Movies
+				</a></li>				
+				<li><a href="#">
+					<span><i class="fas fa-music"></i></span>
+					Music
+				</a></li>
+				<li><a href="#">
+					<span><i class="fas fa-chess-king-alt"></i></span>
+					Games
+				</a></li>
+				<hr>
+				<li class="trash"><a href="#">
+					<span><i class="fas fa-trash-alt"></i></span>
+					Trash
+				</a></li>
+			</ul>
+		</div>
+		<div class="shadow"></div>
+		<div class="container4">
+			<div class="grid1">
+				<div class="font-item">					
+					<span style="font-size: 10px; cursor: pointer;"><i class="far fa-arrow-left"></i></i></span>
+					<strong style="font-size: 20px;">june</strong>
+					<span style="font-size: 10px; cursor:pointer;"><i class="far fa-arrow-right"></i></i></span>					
+				</div>			
+				<div class="week-days">					
+					<div>Sun</div>
+					<div>Mon</div>
+					<div>Tue</div>
+					<div>Wed</div>
+					<div>Thu</div>
+					<div>Fri</div>
+					<div>Sat</div>				
+				<!-- </div>
+				<div class="cale-days"> -->
+					<button type="button" class="btn-type" disabled style="pointer-events:none;">30</button>
+					<button type="button" class="btn-type" disabled style="pointer-events:none;">31</button>
+					<button type="button" class="btn-type">1</button>
+					<button type="button" class="btn-type">2</button>
+					<button type="button" class="btn-type">3</button>
+					<button type="button" class="btn-type">4</button>
+					<button type="button" class="btn-type">5</button>
+					<button type="button" class="btn-type">6</button>
+					<button type="button" class="btn-type">7</button>
+					<button type="button" class="btn-type">8</button>
+					<button type="button" class="btn-type">9</button>
+					<button type="button" class="btn-type">10</button>
+					<button type="button" class="btn-type">11</button>
+					<button type="button" class="btn-type">12</button>
+					<button type="button" class="btn-type">13</button>
+					<button type="button" class="btn-type">14</button>
+					<button type="button" class="btn-type">15</button>
+					<button type="button" class="btn-type">16</button>
+					<button type="button" class="btn-type">17</button>
+					<button type="button" class="btn-type">18</button>
+					<button type="button" class="btn-type">19</button>
+					<button type="button" class="btn-type">20</button>
+					<button type="button" class="btn-type">21</button>
+					<button type="button" class="btn-type">22</button>
+					<button type="button" class="btn-type">23</button>
+					<button type="button" class="btn-type">24</button>
+					<button type="button" class="btn-type">25</button>
+					<button type="button" class="btn-type">26</button>
+					<button type="button" class="btn-type">27</button>
+					<button type="button" class="btn-type">28</button>
+					<button type="button" class="btn-type">29</button>
+					<button type="button" class="btn-type">30</button>
+					<button type="button" class="btn-type">31</button>
+				</div>					 	
+			</div>			
+		</div>
+		<div class="shadow"></div>
+		<div class="container5">
+			<ul>
+				<li><a href="#">
+					<div style="display: flex;">
+						<span style="font-size: 35px;padding: 0px 15px;">
+							<i class="fas fa-image">								
+							</i></span>
+						<div>
+							Features
+							<p style="font-weight: 100;">Take a tour through the products</p>
+						</div>						
+					</div>					
+				</a></li>
+				<br>
+				<li><a href="#">
+					<div style="display: flex;">
+						<span style="font-size: 35px;padding: 0px 15px;">
+							<i class="fal fa-question-circle"></i>
+						</span>
+						<div>
+							Supports
+							<p style="font-weight: 100;">Get help from our support crew</p>
+						</div>					
+					</div>					
+				</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Navigation bar</title>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.shadow{
+			box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
+		    background-color: rgba(0, 0, 0, .1);
+		    height: 3rem;
+		    border: solid rgba(0, 0, 0, .15);
+		    border-width: 1px 0;
+		}
+		.Head-container{
+			background-color: #a8b0b3bd;
+			min-height: 100vh;
+			width: 100%;
+		}
+		.container1{			
+			background-color: white;
+			/*display: flex;*/			
+		    height: 95px;
+		    width: 100%;
+		    		
+		}
+		.drop-down{
+			display:flex;
+			border-bottom: 1px solid #a8b0b3bd;					
+		    height: 70px;
+		    margin-left: 90px;
+		    /*margin-right: 90px;*/
+		}
+		.nav{
+			display:flex;			
+    		margin: 25px 8px 0px 487px;    		
+    		list-style-type: none;
+    	}
+    	a{
+    		text-decoration: none !important;
+    		margin: 5px;
+    		padding: 5px;    		
+		    font-weight: 100;
+		    font-size: larger;
+    	}
+		#wrap h1{					
+		    font-weight: 100;
+		    margin-top: 5px;
+				}
+		.logo1{
+			margin-left: 0px;			
+		}
+		.logo1 img{
+			/*width: 50px;
+			height: 40px*/;
+			margin-top: 5px;
+		}
+		.active{
+			background-color: blue;
+			color: white;
+			padding: 10px;
+		}	
+		
+		.container2{
+			background-color:white;
+			height: 80px;
+			width: 100%;
+		}
+		.nav2{
+			display: flex;
+			justify-content: center;
+			list-style-type: none;
+		}
+		.nav2 li {
+			margin-top: 20px;
+			padding: 10px;
+		}
+		.container3{
+			background-color:white;
+			height: 95px;
+		}
+		.drop-down3{
+			display: flex;
+			border-bottom: 1px solid #a8b0b3bd;					
+		    height: 70px;
+		     margin-left: 90px;
+		    margin-right: 90px;
+		}
+		.nav3{
+			display: flex;					
+		    margin-top: 20px;
+        	margin-left: 25px;
+		    padding: 10px;
+		    list-style: none;
+		}
+		.logo2{
+			margin: 10px 310px 0px 0px;
+		}
+		.btn{			
+		    margin-top: 10px;		    
+    		padding: 10px 0px 0px 253px;
+		}
+		.btn button{
+			cursor: pointer;			
+		    border: 2px solid blue;
+		    padding: 10px;
+		    background-color: white;
+		    border-radius: 5px;
+		    color: blue;
+		}
+		.btn button:hover{
+			background-color: blue;
+			color: white;
+		}
+		.signup{
+			background-color: blue !important;
+			color: white !important;
+		}
+		.diseable{
+			color: gray !important;
+		}
+		.container4{
+			display: flex;
+			background-color: black;
+			height: 80px;
+			width: 100%;
+		}
+		.drop-down4{
+			display: flex;
+		}
+		.logo3{
+						
+		    margin: 10px 0px 0px 90px;
+		}
+		.nav4{
+			display: flex;
+			list-style: none;
+			margin: 20px 0px 0px 10px
+
+			
+		}
+		.drop-down4 ul li a{
+			color: white;
+		}
+		.text{
+			width: 50%;
+		}
+		.btn2{
+			/*display: flex;*/
+			width: 50%;
+			text-align: right;
+			margin: 20px 98px 0px 0px;
+		}
+		.login{			
+		    margin: 0px 10px 0px 5px;
+		    padding: 10px;
+		    border-radius: 5px;
+		    background-color: transparent;
+		    border: 1px solid white;		    
+		    color: white;
+		    cursor: pointer;
+		}
+		.login:hover{
+			background-color: white;
+			color: black;
+		}
+		.sign{
+			padding: 10px;
+			border-radius: 5px;
+			background-color: #f1bc33;
+			cursor: pointer;
+
+		}
+		.search{
+			padding: 10px;
+			border-radius: 5px;
+			width: 200px;
+		    font-size: 15px;
+		    background-color: transparent;
+		    border: 1px solid gray;
+		    color: white;
+		}
+		.container5{
+			background-color: white;
+			height: 95px;
+			width: 100%;
+			
+		}
+		.drop-down5{
+			display: flex;
+		}
+		.nav5{
+			list-style-type: none;
+			display: flex;
+			margin-top: 20px;
+
+		}
+		.nav5 li a{
+			color: black;
+		}
+		.float-l{
+			float: left;
+		}
+		.float-r{
+			float: right;
+			display: flex;
+		}
+		.logo4{
+			margin-left: 90px;
+			padding: 10px;
+		}
+		.search1{
+		    height: 40px;
+		    margin-top: 20px;
+		    font-size: 15px;
+		    width: 200px;
+		    border-radius: 5px;
+		    padding: 5px;
+		    border: 1px solid;
+		}
+		.proimg{
+			border-radius: 20px;
+    		margin-top: 10px; 
+    		cursor: pointer;   		
+		}
+		.pointer{
+			margin: 15px 0px 0px 5px;
+			cursor: pointer;
+		}
+		.nav6{
+			list-style-type: none;
+			display: none;
+			position: absolute;	
+   		 	border: 1px solid gray; 
+   		 	border-radius: 5px;  		 	
+		    background-color: white;
+		    color: black;
+		    flex-wrap: nowrap;
+		    width: 140px;
+		    font-size: 15px;
+		    padding: 5px;
+		    line-height: 25px;				
+		}
+		.nav6 a{
+			color: black;
+		}
+		.nav6 li:hover{
+			background-color:#e9ecef;
+		}
+		.picnav{
+			display: flex;
+			margin-right: 90px;			
+		}
+		.imgnav{
+			position: relative;
+			display: inline-block;
+			list-style-type: none;
+		}
+	 	.imgnav:hover .nav6{
+		 	display: block;
+		 }
+		 .line{
+	 	    height: 80%;
+		 	border-bottom:1px solid gray;
+		 }		 
+		 .container6{
+		 	background-color: white;
+		 	height: 80px;
+		 	width: 100%;
+		 }
+		 .float-l2{
+		 	float: left;
+		 	width: 30%;
+		 }
+		 .float-r2{
+		 	float: right;
+		 	width: 70%;
+		 }
+		 .drop-down6{
+		 	display: flex;
+		 }
+		 .drop-down7{
+		 	display: flex;
+		 }
+		 .imgnav2{
+		 	margin: 10px 0px 0px 25px;
+		 	/*display: flex;*/
+		 	position: relative;		 	
+		 	list-style-type: none;
+		 }		 
+		 .nav7{
+		 	position: absolute;
+		 	list-style-type: none;
+		 	display: none;		   
+		    background-color: white;
+		    border: 1px solid gray;
+		    font-size: 15px;
+		    line-height: 25px;
+	        padding: 5px;
+		    width: 150px;
+		    border-radius: 10px;
+		 }
+		 .nav7 li:hover {
+		 	background-color: #e9ecef;
+		 }
+		 .nav7 a{
+		 	color: black;
+		 }
+		 .imgnav2:hover .nav7{
+		 	display: block;
+		 }
+		 .search2{
+ 	    	width: 56em;
+		    height: 35px;
+		    margin-top: 20px;
+		    padding: 5px;
+		    font-size: 15px;
+		    border: 1px solid gray;
+		    border-radius: 5px;
+		 }		 
+		 .imgnav3{	
+		 	position: relative;	 	
+		    list-style: none;
+		    margin-top: 20px;
+		    padding-left:25px;	 	 	*/
+		 	
+		 }
+		 .imgnav3 img{
+		 	
+		    border-radius: 20px;
+		    cursor: pointer;
+		 }	
+		 .nav8{
+		 	position: absolute;
+		    list-style: none;
+		    display: none;
+		    border: 1px solid gray; 
+   		 	border-radius: 5px;  		 	
+		    background-color: white;
+		    color: black;
+		    flex-wrap: nowrap;
+		    width: 140px;
+		    font-size: 15px;
+		    padding: 5px;
+		    line-height: 25px;
+		    inset: 0px 0px auto auto;
+    		transform: translate(0px, 34px);	
+		 }
+		 .nav8 a{
+		 	color: black;
+		 }
+		 .nav8 li:hover {
+		 	background-color:#e9ecef;
+		 }
+		 .imgnav3:hover .nav8{
+		 	display: block;
+		 }
+		 .main2{
+		 	background-color: white;
+		 	height: 60vh;
+		 }
+		 .sub-container{
+		 	display: flex;		 	
+		 	justify-content: space-between;
+		 }
+
+		 .box1{
+		 	background-color: #e9ecef;
+		 	/*border: 1px solid black;*/
+		 	width: 35%;
+		 	height: 42vh;
+		 	margin: 15px;
+		 	border-radius: 5px;
+		 	
+		 }
+
+		 .box2{
+		 	background-color: #e9ecef;
+		 	/*border: 1px solid black;*/
+		 	width: 65%;
+		 	height: 42vh;
+		 	margin: 15px 15px 15px 0px;
+		 	border-radius: 5px;		 	
+		 }
+		 .container7{
+		 	background-color: #e9ecef;
+		 	height: 60px;
+		 	width: 100%;
+		 }
+
+		.nav9{
+		    display: flex;
+		    list-style: none;
+		    margin: 20px 0px 0px 100px;
+		} 
+		.nav9 a{
+			color: black;
+		}
+		.btn3{
+			margin: 20px 100px 0px 0px;
+		}
+		.btn-type{		    
+		    margin-right: 10px !important;
+		    font-size: 15px;
+		    border: none;
+		    background-color: transparent;
+		    cursor: pointer;
+		}	
+		.main3{
+			background-color: white;
+			height: 10em;
+			width: 100%;
+			/*border-bottom: 1px solid;*/
+		}
+		.imgnav4{
+			display: flex;
+	   	 	margin: 10px 0px 0px 90px;
+		}
+		.search-r{			
+		    margin: 20px 100px 0px 0px;
+		    height: 35px;
+		    width: 200px;
+		    border-radius: 5px;
+		    border: 1px solid;
+		    padding: 5px;
+		    font-size: 15px;
+		}
+		h2{			
+		    padding: 5px;
+		    color: black;
+		    font-weight: 100;
+		}
+		.drop-down9{
+			border-bottom: 1px solid #a8b0b3bd;					
+		    height: 75px;
+		    /*margin-left: 90px;
+		    margin-right: 90px;*/
+		}
+		.container9{
+			background-color: black;
+			height: 80px;
+			width: 100%;
+		}
+		.imgnav5 img{
+			margin: 20px 0px 0px 95px;
+		}
+		.nav10{			
+		    list-style: none;
+		    display: flex;
+		    margin: 20px 90px 0px 0px;
+		}
+		.nav10 li{
+			padding: 0px 10px 0px 10px;
+		}
+		.nav10 a{
+			color: white;
+		}
+		.Anchor{
+			margin: 0px;
+			padding: 0px;
+		}
+		h6{
+			text-align: center;
+		}
+		.main4{
+			background-color: white;
+			height: 11em;
+			width: 100%;
+		}
+		.search-r2{			
+		    margin: 20px 0px 0px 100px;
+		    height: 30px;
+		    width: 200px;
+		    border-radius: 5px;
+		    padding: 5px;
+		    font-size: 15px;
+		    border: 1px solid;
+		}
+		#btn-type{			
+		    padding: 10px;
+		    margin-right: 10px;
+		    border: none;
+		    font-size: 15px;
+		    border-radius: 5px;
+		}
+		#btn-type2{			
+		    padding: 10px;
+		    margin-right: 10px;		    
+		    font-size: 15px;
+		    background-color: blue;
+		    border-radius: 5px;
+		    border: none;
+		    color: white;
+		}
+		.drop-down11{
+			border-bottom: 1px solid #a8b0b3bd;					
+		    height: 70px;
+		}
+		
+		
+	</style>
+</head>
+<body>	
+	<main class="Head-container">		
+		<div class="container1">
+		<header class="drop-down">
+				<a href="#" class="logo1">
+					<img src="img/images.png" alt="" width="50" height="40">
+				</a>
+				<a href="#" id="wrap">
+					<h1>Simple header</h1>
+				</a>		
+				<ul class="nav">
+					<li><a href="#" class="active">Home</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Pricing</a></li>
+					<li><a href="#">FAQs</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+		</header>		
+		</div>
+		<div class="shadow">
+			<!-- <hr class="dashed">		 -->
+		</div>
+		<div class="container2">
+			<header class="drop-down2">
+				<ul class="nav2">
+					<li><a href="#" class="active">Home</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Pricing</a></li>
+					<li><a href="#">FAQs</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+			</header>
+		</div>
+		<div class="shadow">
+			<!-- <hr class="dashed">		 -->
+		</div>		
+		<div class="container3">
+			<header class="drop-down3">
+				<a href="#" class="logo2">
+					<img src="img/images.png" alt="" width="50" height="40">
+				</a>
+				<ul class="nav3">
+					<li><a href="#" class="diseable">Home</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Pricing</a></li>
+					<li><a href="#">FAQs</a></li>
+					<li><a href="#">About</a></li>
+					<!-- <li><i class="fas fa-home"></i></li> -->
+				</ul>
+				<div class="btn">
+					<button type="button">Login</button>
+					<button type="button" class="signup">Sign-up</button>
+				</div>				
+			</header>
+		</div>
+		<div class="shadow">
+			<!-- <hr class="dashed">		 -->
+		</div>	
+		<div class="container4">			
+				<div class="text">
+					<header class="drop-down4">
+						<a href="#" class="logo3">
+							<img src="img/images.png" alt="" width="50" height="40">
+						</a>
+						<ul class="nav4">
+							<li><a href="#" class="diseable">Home</a></li>
+							<li><a href="#">Features</a></li>
+							<li><a href="#">Pricing</a></li>
+							<li><a href="#">FAQs</a></li>
+							<li><a href="#">About</a></li>							
+						</ul>
+					</header>
+				</div>				
+				<div class="btn2">					
+					<input type="search" class="search" placeholder="search...">
+					<button type="button" class="login">Login</button>
+					<button type="button" class="sign">Sign-up</button>
+				</div>	
+		</div>
+		<div class="shadow">
+			<!-- <hr class="dashed">		 -->
+		</div>									
+		<div class="container5">
+			<div class="line">
+				<div class="float-l">
+					<header class="drop-down5">
+						<a href="#" class="logo4">
+							<img src="img/images.png" alt="chhoti" width="50" height="40">
+						</a>
+						<ul class="nav5">
+							<li><a href="#" class="diseable">Overview</a></li>
+							<li><a href="#">Inventory</a></li>
+							<li><a href="#">Coustomers</a></li>
+							<li><a href="#">Products</a></li>											
+						</ul>
+					</header>
+				</div>
+				<div class="float-r">
+					<div class="picnav">
+						<input type="Search" class="search1" placeholder="search...">
+						<ul class="imgnav">
+							<li class="">
+								<div style="display:flex;padding: 10px;">
+									<img src="img/22.png" alt="chhoti" class="proimg" width="32" height="32"/>
+								<span class="pointer"><i class="fas fa-caret-down"></i></span>
+								</div>							
+								<ul class="nav6">
+									<li><a href="#">New project...</a></li>
+									<li><a href="#">Setting</a></li>
+									<li><a href="#">Profile</a></li>
+									<hr style="margin: 0px -5px 0px -5px;">
+									<li><a href="#">Sign-out</a></li>				
+								</ul>
+							</li>
+						</ul>				
+					</div>
+				</div>
+			</div>
+			
+			<!-- <hr style="border: 3px solid blue;">				 -->
+		</div>
+		<div class="shadow">
+			
+		</div>
+		<div class="main2">
+			<div class="container6">			
+			<div class="float-l2">
+			<header class="drop-down6">
+				<ul>
+					<li class="imgnav2">
+						<div style="display: flex;">
+							<img src="img/images.png" alt="" width="50" height="40">
+							<span class="pointer"><i class="fas fa-caret-down"></i></span>
+						</div>
+						<ul class="nav7">
+							<li style="background-color:blue;"><a href="#">Overview</a></li>
+							<li><a href="#">Inventory</a></li>
+							<li><a href="#">Coustomers</a></li>
+							<li><a href="#">Products</a></li>					
+							<hr style="margin: 0px -5px 0px -5px;">							
+							<li><a href="#">Reports</a></li>
+							<li><a href="#">Analaytic</a></li>					
+						</ul>
+					</li>
+				</ul>				
+			</header>
+			</div>
+			<div class="float-r2">
+			<header class="drop-down7">
+				<div class="s-box">
+					<input type="Search" class="search2" placeholder="Search...">	
+				</div>				
+				<ul>
+					<li class="imgnav3">
+						<div style="display: flex;">
+							<img src="img/22.png" alt="" width="32" height="32">
+							<span class="pointer"><i class="fas fa-caret-down"></i></span>
+						</div>
+						<ul class="nav8">
+							<li><a href="#">New project...</a></li>
+							<li><a href="#">Setting</a></li>
+							<li><a href="#">Profile</a></li>
+							<hr style="margin: 0px -5px 0px -5px;">
+							<li><a href="#">Sign-out</a></li>			
+						</ul>
+					</li>
+				</ul>				
+			</header>	
+			</div>		
+			</div>
+			<hr>
+			<div class="sub-container">
+				<div class="box1"></div>
+				<div class="box2"></div>
+			</div>	
+		</div>		
+		<div class="shadow">
+			<!-- <hr class="dashed">		 -->
+		</div>
+		<div class="main3">
+			<div class="container7">
+			<header class="drop-down8">
+				<div class="float-l">
+					<ul class="nav9">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Features</a></li>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">FAQs</a></li>
+						<li><a href="#">About</a></li>
+					</ul>
+				</div>
+					<div class="float-r">
+						<div class="btn3">
+							<button type="button" class="btn-type">Login</button>
+							<button type="button" class="btn-type">Sign-up</button>
+						</div>								
+					</div>
+			</header>
+			</div>
+			<hr>
+			<div class="sub-container2">
+				<header class="drop-down9">
+					<div class="float-l">
+						<a href="#" class="imgnav4">
+							<img src="img/images.png" alt="" width="50" height="40">
+							<h2>Double header</h2>
+						</a>
+					</div>
+					<div class="float-r">
+						<input type="Search" name="search" class="search-r" placeholder="search...">
+					</div>										
+				</header>
+			</div>					
+		</div>
+		<div class="shadow">
+			<!-- <hr class="dashed">		 -->
+		</div>
+		<div class="main4">
+			<div class="container9">
+			<header class="drop-down10">
+				<div class="float-l">
+					<a href="#" class="imgnav5">
+						<img src="img/images.png" alt="" width="50" height="40">
+					</a>
+				</div>
+				<div class="float-r">
+					<ul class="nav10">
+						<li><a href="#" class="Anchor diseable" >
+								<h6><i class="fas fa-home fa-2x"></i></h6>
+								Home
+							</a>
+						</li>
+						<li><a href="#" class="Anchor">
+								<h6><i class="fas fa-tachometer-alt fa-2x"></i></h6>
+								Dashboard
+							</a>
+						</li>
+						<li><a href="#" class="Anchor"> 
+							 	<h6><i class="fas fa-table fa-2x"></i></h6>
+								Orders
+							</a>
+						</li>
+						<li><a href="#" class="Anchor">
+								<h6><i class="fas fa-th-large fa-2x"></i></h6>
+								Products
+							</a>
+						</li>
+						<li><a href="#" class="Anchor">
+							<h6><i class="fas fa-users fa-2x"></i></h6>
+								Customers
+							</a>
+						</li>
+					</ul>
+				</div>				
+			</header>
+			</div>
+			<div class="sub-container3">
+				<header class="drop-down11">
+					<div class="float-l">
+						<input type="Search" name="search" class="search-r2" placeholder="search...">
+					</div>
+					<div class="float-r">
+						<div class="btn3">
+							<button type="button" id="btn-type">Login</button>
+							<button type="button" id="btn-type2">Sign-up</button>
+						</div>						
+					</div>					
+				</header>
+			</div>
+		</div>		
+		<div class="shadow">
+		</div>		
+	</main>	
+</body>
+</html>

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<title>Features</title>
+	<style type="text/css">
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		.shadow{
+			box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
+		    background-color: rgba(0, 0, 0, .1);
+		    height: 3rem;
+		    border: solid rgba(0, 0, 0, .15);
+		    border-width: 1px 0;
+		}
+		.container{
+			    margin: 6em;
+			    /*width: 85vw;*/
+		}
+		.d-flex{
+			display: flex;
+			width: 80vw;
+		}
+		.img{					
+		    background-color: blue;
+		    display: inline-block;
+		    height: 50px;
+		    width: 65px;
+		    text-align: center;
+		    color: white;
+		    border-radius: 10px;
+		    font-size: xx-large;
+		    margin-top: 2em;
+	        padding-top: 10px;
+		}
+		.h-margin{
+			margin: 5px 0px;
+		}
+		.img2{
+			display: flex;
+			margin-top: 1em;
+		}
+		.img2 span{
+			    margin: 3px 0px 0px 6px;
+		}
+		.h-img{					
+		    background-color: #e0e0e585;
+		    display: inline-block;
+		    height: 50px;
+		    width: 65px;
+		    text-align: center;
+		    color: black;
+		    border-radius: 10px;
+		    font-size: xx-large;
+		    margin-top: 2em;
+	        padding-top: 10px;
+		}
+		.btn-type{			
+		    color: white;
+		    margin: 5px;
+		    background-color: #2323ed;
+		    padding: 10px;
+		    width: 125px;
+		    margin: 2em 0em;
+		    border: none;
+		    border-radius: 5px;
+		    cursor: pointer;
+		    font-size: 15px;
+		}
+		button.btn-type:hover{
+			background-color: #08087c;
+		}
+		.card{
+			background-image: url('https://getbootstrap.com/docs/5.1/examples/features/unsplash-photo-1.jpg');			
+		    background-size: cover;
+		    background-repeat: no-repeat;		    
+		    background-position: center center;
+		    height: 400px;
+    		width: 350px;
+		    border-radius: 10px;
+		    margin-top: 3em;
+		    color: white;
+		   
+		}
+		.card2{
+			background-image: url('https://getbootstrap.com/docs/5.1/examples/features/unsplash-photo-2.jpg');			
+		    background-size: cover;
+		    background-repeat: no-repeat;		    
+		    background-position: center center;
+		    height: 400px;
+    		width: 350px;
+		    border-radius: 10px;
+		    margin-top: 3em;
+		    color: white;
+		    
+		}
+		.card3{
+			background-image: url('https://getbootstrap.com/docs/5.1/examples/features/unsplash-photo-3.jpg');			
+		    background-size: cover;
+		    background-repeat: no-repeat;		    
+		    background-position: center center;
+		    height: 400px;
+    		width: 350px;
+		    border-radius: 10px;
+		    margin-top: 3em;
+		    color: white;
+		   
+		}
+		h2{
+	        text-align: left;
+    		margin-top: 2em;
+    		padding: 0em 3em;
+		    font-weight: bolder;
+		    font-size: 2em;	
+	     	text-shadow: 2px 1px #898484;	    
+		}
+		.bottom-item{
+		    display: flex;
+		    list-style: none;
+		    justify-content: space-around;   
+		 	margin-top: 12em;
+		}
+		.bottom-item div ul{			
+		    display: flex;
+		    list-style: none;
+		}
+		.bottom-item div ul li{
+			padding-right: 13px;
+		    padding-top: 10px;
+		}
+		.sub-container{
+		    display: flex;
+        	margin-top: 3em;
+		}
+		.flex{
+			display: flex;
+		}
+		.img-circle{					
+		    border: 1px solid;
+		    border-radius: 50%;
+		}
+		.grid-m{
+			    margin: 10px 10px 0px 0px;
+			    font-size: 25px;
+			    color: gray;
+		}
+		.container2{
+			margin: 6em;
+		}
+
+		.son-container{
+			row-gap: 35px;
+			display: grid;			
+			grid-template-columns:repeat(4, auto);			
+    		margin-top: 35px;
+		}
+		.grid{
+			display: grid;
+			grid-template-columns:repeat(4, auto);			
+		}
+		.grid-n{
+			margin: 10px 10px 0px 0px;
+		    font-size: 25px;
+		    color: gray;
+		}
+		
+	</style>
+</head>
+	<div class="body">
+		<div class="container">			
+			<h1 style="margin-top: -3em;line-height: 2em;">Columns with icons</h1>
+			<hr>
+			<div class="d-flex">
+				<div>
+					<div class="img"><i class="fas fa-ethernet"></i></div>
+					<h1 class="h-margin">Featured title</h1>
+					<p>
+						Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.
+					</p>
+					<a href="#" class="img2">
+						call to action
+						<span><i class="fas fa-chevron-right"></i></span></a>	
+				</div>
+				<div>
+					<div class="img"><i class="fas fa-user-circle"></i></div>
+					<h1 class="h-margin">Featured title</h1>
+					<p>
+						Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.
+					</p>
+					<a href="#" class="img2">
+						call to action 
+						<span><i class="fas fa-chevron-right"></i></span>
+					</a>	
+				</div>
+				<div>
+					<div class="img"><i class="fas fa-toggle-off"></i></div>
+					<h1 class="h-margin">Featured title</h1>
+					<p>
+						Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.
+					</p>
+					<a href="#" class="img2">
+						call to action
+						<span><i class="fas fa-chevron-right"></i></span>
+					</a>
+				</div>
+			</div>			
+		</div>
+		<div class="shadow"></div>
+		<div class="container">
+			<h1 style="margin-top: -3em;line-height: 2em;">Hanging icons</h1>
+			<hr>
+			<div class="d-flex">
+				<div>
+					<div class="h-img"><i class="fas fa-toggle-off"></i></div>
+					<h1 class="h-margin">Featured title</h1>
+					<p>
+						Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.
+					</p>
+					<button type="button" class="btn-type">Primary button</button>
+				</div>
+				<div>
+					<div class=h-img><i class="fas fa-microchip"></i></div>
+					<h1 class="h-margin">Featured title</h1>
+					<p>
+						Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.
+					</p>
+					<button type="button" class="btn-type">Primary button</button>
+				</div>
+				<div>
+					<div class=h-img><i class="fas fa-tools"></i></div>
+					<h1 class="h-margin">Featured title</h1>
+					<p>
+						Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.
+					</p>
+					<button type="button" class="btn-type">Primary button</button>
+				</div>
+			</div>			
+		</div>
+		<div class="shadow"></div>
+		<div class="container">
+			<h1 style="margin-top: -3em;line-height: 2em;">Custom cards</h1>
+			<hr>
+			<div class="d-flex">
+				<div class="card">
+					<div>
+						<h2>Short title, long jacket</h2>
+						<ul class="bottom-item">
+							<li>
+								<img src="img/images.png" alt="chhoti" height="32" width="32"class="img-circle">
+							</li>
+							<li>
+								<div>
+									<ul>
+										<li>
+											<span style="padding-right: 5px"><i class="fas fa-globe-asia"></i></span>
+											Earth
+										</li>
+										<li>
+											<span style="padding-right: 5px"><i class="far fa-calendar-alt"></i></span>
+											3D
+										</li>
+									</ul>								
+								</div>
+							</li>						
+						</ul>
+					</div>
+				</div>
+				<div class="card2" style="margin: 3em 2em;">
+					<h2>Much longer title that wraps to multiple lines</h2>
+					<ul class="bottom-item" style="margin-top: 5em;">
+						<li>
+							<img src="img/images.png" alt="chhoti" height="32" width="32"
+							class="img-circle">
+						</li>
+						<li>
+							<div>
+								<ul>
+									<li>
+										<span style="padding-right: 5px"><i class="fas fa-globe-asia"></i></span>
+										India
+									</li>
+									<li>
+										<span style="padding-right: 5px"><i class="far fa-calendar-alt"></i></span>
+										4D
+									</li>
+								</ul>
+							</div>
+						</li>		
+					</ul>
+				</div>
+				<div class="card3">
+					<h2>Another longer title belongs here</h2>
+					<ul class="bottom-item" style="margin-top: 7em;">
+						<li>
+							<img src="img/images.png" alt="chhoti" height="32" width="32"
+							class="img-circle">
+						</li>
+						<li>
+							<div>
+								<ul>
+									<li>
+										<span style="padding-right: 5px"><i class="fas fa-globe-asia"></i></span>
+										California
+									</li>
+									<li>
+										<span style="padding-right: 5px"><i class="far fa-calendar-alt"></i></span>
+										5D
+									</li>
+								</ul>
+							</div>
+						</li>						
+					</ul>
+				</div>
+			</div>			
+		</div>
+		<div class="shadow"></div>
+		<div class="container">
+			<h1 style="margin-top: -3em;line-height: 2em;">Icon Flex</h1>
+			<hr>
+			<div class="sub-container">
+				<div class="flex">
+					<span class="grid-m"><i class="fab fa-bootstrap"></i></span>	
+					<div>
+						<h1>Featured title</h1>
+						<p style="color: gray;">
+							Paragraph of text beneath the heading to explain the heading.
+						</p>
+					</div>					
+				</div>
+				<div  class="flex">
+					<span class="grid-m"><i class="fas fa-microchip"></i></span>
+					<div>
+						<h1>Featured title</h1>
+						<p  style="color: gray;">
+							Paragraph of text beneath the heading to explain the heading.
+						</p>
+					</div>					
+				</div>
+				<div class="flex">
+					<span class="grid-m"><i class="fas fa-calendar-alt"></i></span>
+					<div>
+						<h1>Featured title</h1>
+						<p  style="color: gray;">
+							Paragraph of text beneath the heading to explain the heading.
+						</p>
+					</div>					
+				</div>
+				<div class="flex">
+					<span class="grid-m"><i class="fas fa-home"></i></span>
+					<div>
+						<h1>Featured title</h1>
+						<p  style="color: gray;">
+							Paragraph of text beneath the heading to explain the heading.
+						</p>
+					</div>					
+				</div>
+			</div>
+			<div class="sub-container">
+				<div class="flex">
+					<span class="grid-m"><i class="fas fa-stopwatch"></i></span>
+					<div>
+						<h1>Featured title</h1>
+						<p  style="color: gray;">
+							Paragraph of text beneath the heading to explain the heading.
+						</p>
+					</div>					
+				</div>
+				<div  class="flex">
+					<span class="grid-m"><i class="fas fa-toggle-off"></i></span>
+					<div>
+						<h1>Featured title</h1>
+						<p  style="color: gray;">
+							Paragraph of text beneath the heading to explain the heading.
+						</p>
+					</div>					
+				</div>
+				<div class="flex">
+					<span class="grid-m"><i class="fas fa-street-view"></i></span>
+					<div>
+						<h1>Featured title</h1>
+						<p  style="color: gray;">
+							Paragraph of text beneath the heading to explain the heading.
+						</p>
+					</div>					
+				</div>
+				<div class="flex">
+					<span class="grid-m"><i class="fas fa-tools"></i></span>
+					<div>
+						<h1>Featured title</h1>
+						<p  style="color: gray;">
+							Paragraph of text beneath the heading to explain the heading.
+						</p>
+					</div>					
+				</div>
+			</div>		
+		</div>
+		<div class="shadow"></div>
+		<div class="container2">
+			<h1 style="margin-top: -3em;line-height: 2em;">Icon Grid</h1>
+			<hr>
+			<div class="grid-container">
+				<div class="son-container">
+					<div class="grid">
+						<div class="grid-n">
+							<span><i class="fab fa-bootstrap"></i>
+							</span>
+						</div>
+						<div>
+							<h1>Featured title1</h1>
+							<p>
+								Paragraph of text beneath the heading to explain the heading.
+							</p>
+						</div>						
+					</div>
+					<div class="grid">
+						<div class="grid-n">
+							<span><i class="fab fa-bootstrap"></i>
+							</span>
+						</div>
+						<div>
+							<h1>Featured title1</h1>
+							<p>
+								Paragraph of text beneath the heading to explain the heading.
+							</p>
+						</div>
+					</div>
+					<div class="grid">
+						<div class="grid-n">
+							<span><i class="fab fa-bootstrap"></i>
+							</span>
+						</div>
+						<div>
+							<h1>Featured title1</h1>
+							<p>
+								Paragraph of text beneath the heading to explain the heading.
+							</p>
+						</div>
+					</div>
+					<div class="grid">
+						<div class="grid-n">
+							<span><i class="fab fa-bootstrap"></i>
+							</span>
+						</div>
+						<div>
+							<h1>Featured title1</h1>
+							<p>
+								Paragraph of text beneath the heading to explain the heading.
+							</p>
+						</div>
+					</div>
+				<!-- </div> -->
+				<!-- <div class="son-container"> -->
+					<div class="grid">
+						<div class="grid-n">
+							<span><i class="fab fa-bootstrap"></i>
+							</span>
+						</div>
+						<div>
+							<h1>Featured title1</h1>
+							<p>
+								Paragraph of text beneath the heading to explain the heading.
+							</p>
+						</div>
+					</div>
+					<div class="grid">
+						<div class="grid-n">
+							<span><i class="fab fa-bootstrap"></i>
+							</span>
+						</div>
+						<div>
+							<h1>Featured title1</h1>
+							<p>
+								Paragraph of text beneath the heading to explain the heading.
+							</p>
+						</div>
+					</div>
+					<div class="grid">
+						<div class="grid-n">
+							<span><i class="fab fa-bootstrap"></i>
+							</span>
+						</div>
+						<div>
+							<h1>Featured title1</h1>
+							<p>
+								Paragraph of text beneath the heading to explain the heading.
+							</p>
+						</div>
+					</div>
+					<div class="grid">
+						<div class="grid-n">
+							<span><i class="fab fa-bootstrap"></i>
+							</span>
+						</div>
+						<div>
+							<h1>Featured title1</h1>
+							<p>
+								Paragraph of text beneath the heading to explain the heading.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</body>
+</html>
