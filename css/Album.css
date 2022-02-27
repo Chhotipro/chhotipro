@@ -1,0 +1,188 @@
+*{
+			padding: 0px;
+			margin: 0px;
+		}
+		.head-section{					
+		    display: flex;
+		    padding: 20px 0px;
+		    width: 100%;
+		    position: relative;
+		    display: none;
+		}
+		.head-section div{
+			width: 50%;
+		    margin-left: 6rem;
+		}
+		.head-section p{
+			color: gray;
+		    font-size: 18px;
+    		margin-top: 10px;
+		}
+		header{					
+		    background-color: black;
+		    color: wheat;
+	           opacity: .9;
+		}
+		.h-anchor div{
+			 margin-left: -6rem;
+			 margin-top: 5px;			 	 
+		}
+		.h-anchor div a{
+			color: #cfc5c5e0;		
+		}
+		.head-section2{
+			background-color: black;
+		    display: flex;
+    		justify-content: space-between;
+    		align-items: baseline;
+		}
+		.head-section2 div{
+		  	margin-left: 6rem;
+	  	    font-size: 20px;
+		}
+		.head-section2 div a{
+			color: white;
+			text-decoration: none;
+		}
+		.btn button{
+	       	margin-right: 12rem;
+		    margin-bottom: 8px;
+		    margin-top: 8px;
+		    background-color: transparent;
+		    color: white;
+		    border: 1px solid gray;
+		    border-radius: 8px;
+		    height: 45px;
+		    width: 60px;
+		    cursor: pointer;
+	     	box-shadow: 0 0 0 0.2rem #cbc9c9fa;
+		}
+		.btn{
+			 /*position: absolute;*/
+		}
+		.btn button span{
+			font-size: 25px;
+		    color: gray;
+		}
+		.btn:hover .head-section{
+			display: block;
+		}
+		.p-section{
+		    margin: 5rem auto;
+		    display: block;
+		    width: 50%;
+		    text-align: center;
+		}
+		.p-section h1{
+			font-size: 2.5rem;
+		    font-weight: 100;
+		    margin: 10px auto;
+		}
+		.p-section p{
+	    	font-size: 25px;
+		    color: gray;
+		    font-family: 'EB Garamond', serif;
+		    font-weight: inherit;
+		    line-height: 30px;
+		}
+		.p-section div{
+			margin: 20px auto;
+		}
+		.p-section div button{
+		    padding: 10px;
+		    font-size: 18px;
+		    border: 1px solid gray;
+		    border-radius: 5px;
+		    background-color: #0000ffb0;
+		    color: white;
+		    cursor: pointer;
+		}
+		.p-section div button:hover{
+			opacity: 0.9;
+		}
+		.p-section div button:focus{
+			box-shadow: 0 0 0 0.20rem lightblue;
+		}
+		#btn-type:focus{
+			box-shadow: 0 0 0 0.20rem lightgray;
+		}
+		.t-section{
+			background-color: #dcdcdc38;
+		}
+		.t-section-in{
+		    display: flex;    
+		    padding: 3rem 8rem;
+		    gap: 20px;
+		}
+		.t-section-in h3{
+			background-color: gray;
+		    padding: 6rem;
+		    color: white;
+		    font-weight: 100;
+		    text-align: center;
+		    text-shadow: 0.1rem 0 0 black;	
+		    border-top-left-radius: 5px;
+		 	border-top-right-radius: 5px;	    
+		}
+		.card{			
+		    padding: 1.5rem 5rem 1.5rem 1rem;
+		    /* color: white; */
+		    background-color: white;
+		    border: 1px solid #8080804d;
+		 	border-bottom-left-radius: 5px;
+		 	border-bottom-right-radius: 5px;
+	       	box-shadow: 0rem 0rem 0.22rem #d3caca;
+		}
+		.btn-type2{
+		    display: flex;
+    		justify-content: space-between;
+    		  margin-top: 15px
+		}
+		.btn-type2 div{
+			display: flex;
+		    border: 1px solid;
+    		border-radius: 5px;
+
+		}
+		.btn-type2 div button{
+			background-color: transparent;
+    		border: none;
+    		padding: 8px;
+    		cursor: pointer;
+		}
+		.btn-type2 div button:hover{
+			background-color: gray;
+			color: white;
+		}
+		.btn-type2 span{
+			margin-right: -3rem;			
+		}
+		.btn-type-shadow-right:focus{
+			box-shadow: 0 0 0 0.25rem rgb(108 117 125 / 50%);
+			border-radius: 5px;
+		 	border-top-right-radius: 0px;
+			border-bottom-right-radius: 0px;
+			border-right: 1px solid;
+		 }
+		 .btn-type-shadow:focus{
+		 	box-shadow: 0 0 0 0.25rem rgb(108 117 125 / 50%);
+			border-radius: 5px;
+		 	border-top-left-radius: 0px;
+			border-bottom-left-radius: 0px;
+			border-right: 1px solid;
+		 }
+		 .btn-type-shadow{		 	
+			border-left: 1px solid !important;
+		 }
+		 .footer{
+	 	    margin: 3rem 8rem;
+	 	    line-height: 30px;
+		 }
+		 .footer div{
+	 	    display: flex;
+		    justify-content: space-between;
+		    font-size: 18px;
+		 }
+
+
+

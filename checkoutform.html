@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Checkout Exemple</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			/*font-size: 40px;*/
+			/*background-color: lightblue;*/
+		}
+		.check{
+			text-align: center;
+		}
+		.head{
+			width: 80vw;
+	    	font-size: 21px;	    	
+	    	/*padding: 0 193px;*/
+	    	margin: 0px auto;
+	    	padding-bottom: 45px;
+	    }
+	    .little{ 
+    	    margin: 0px 0px 0px 220px;
+    		font-size:  x-large;
+    		width: 580px;
+		}   
+		.container{
+	    	width: 60vw;
+	    	box-sizing: border-box;
+	    	margin: 0px 0px 0px 200px;
+	    	font-size: 20px;	    
+	    }	
+   		.chhoti{
+	    	/*padding-left: 9em;*/
+    	}
+	    
+	    .formgroup{
+	    	width: 50%;
+	    	margin: 0px 19px 0px 0px;
+	    	/*display: flex;
+	    	flex-wrap: wrap;*/
+	    	justify-content: space-between;
+    		font-size: large;
+   			margin: 0px 0px 0px 10px;
+	    }
+	    .margin{
+
+    		margin: 0px 0px 0px 10px;
+	    }
+	    .formrow{
+	    	width: 100%;
+	    	display: grid;
+	    	justify-content: space-between;
+	    	padding: 10px;
+	   }
+	   .box1{
+	   		
+		    display: grid;
+		    /*padding: 9px 0px 20px 0px;*/
+		    margin: 0px 7px 10px 8px;
+	   }
+	   .padding{
+		    padding: 0px 380px 0px 0px;	
+	        height: 25px;   
+	   }
+	   .padding2{
+   			display: inline-block;
+    		/*padding: 0px 10px 0px 0px;*/
+		    height: 28px;
+	        width: 95%;
+	   }
+	   .padding3{
+   			display: inline-block;
+    		/*padding: 0px 10px 0px 0px;*/
+		    height: 28px;
+	        width: 100%;
+	   }
+	   .box2{
+			display: grid;
+	   }
+	   .box3{
+	   		display: grid;
+	   }
+	   input[type="button"]{
+	   		height: 29px;
+		    display: inline-block;
+		    /*padding: 0px 445px 0px 0px;*/
+		    /*border-radius: 5px;*/
+		    background-color: red;
+		    color: white;
+		    /*text-align: center;*/
+		    border: none;
+		    padding-top: 7px;
+		    font-size: 20px;
+		
+	   }
+	   footer{
+		   	text-align: center;
+		    font-size: larger;
+		    font-weight: 600;
+		    margin-top: 3em;
+		    text-align: center;
+		 	margin-bottom: 2em;
+	   }
+	   .container1{
+	   		width: 40vw;
+	   		height: 50vh;
+	   		/*background-color: #ebf0f1fa;*/
+	   		float: right;
+	   		/*padding-right: 9em;*/
+   		    /*overflow: auto;*/
+	   }
+	   .main{
+	   	display: flex;
+	   	padding-right: 9em;
+	   }
+	   #demo2{
+	   	/*display: inline-block;*/
+	   	/*float: right;*/
+   	    /*margin: -40px 465px 0px 0px;   	    */
+	    color: blue;
+	    font-weight: 800;
+	    width: 370px;
+	   }
+	   #button{
+	   	
+	    height: 30px;
+	    width: 33px;
+	    /*display: inline-block;
+	    float: right;*/
+	    text-align: center;
+	    /*margin: -67px 155px 33px 1px;*/
+	    background-color: blue;
+	    color: white;
+	    border-radius: 40px;
+	    font-weight: 900;
+	    border: none;
+	   }
+	   .list{
+	   	box-sizing: border-box;
+	   }
+   		ul{
+   			list-style-type: none;
+   			margin: 0;
+   			padding: 0;
+   			/*display: inline-block;*/
+   		}
+   		ul li{
+   			border: 2px;
+   			margin: 0px;
+   			padding: 10px;
+   			background-color: white;
+   		}
+   		.title{
+   			display: flex;
+   			width: 100%;
+   			margin-top: 50px;
+   		}
+   		.logo{
+		    text-align: center;
+			padding-top: 25px;
+		 	padding-bottom: 18px;
+   		}
+   		.submitbtn{
+   			margin-top: 1em;
+		    text-align: center;
+		    background-color: red;
+		    border-radius: 10px;
+		    height: 40px;
+
+   		}
+   		.left{
+   			float: left;
+   		}
+		.right{
+			float: right;
+		}
+		li{
+			height: 50px;
+		    border: 2px solid lightcyan !important;
+		}
+		.mute-text{
+			width: 30px;
+		    border: none;
+		}
+		p{
+
+		    display: inline-block;
+		    float: left;
+		    padding-top: 10px;
+		}
+		strong{
+			float: right;
+			display: inline-block;		    
+		    padding-top: 10px;
+	        padding-right: 16px;
+
+		}
+		.card{
+					
+		    display: flex;
+		    position: relative;
+		    background-color: white;
+		    border: 1px solid aquamarine;
+		    margin-top: 10px;
+		}
+		.form-control{
+
+		    margin: 10px;
+		    padding: 10px;
+		    width: 290px;
+		    border: 5px solid #00faec36;
+		    border-radius: 5px;
+		    font-weight: 900;
+		
+		}
+		.btn2{
+					 
+		    margin-left: -43px;
+		    padding: 15px;
+	        background-color: #180707ed;
+		    color: white;
+		    border-radius: 5px;
+		    border-top-left-radius: 0;
+		    border-bottom-left-radius: 0;
+
+		}
+		.frow{
+		    width: 100%;
+    		display: flex;
+		}
+	</style>
+</head>
+<body style="background-color: #ede5e5ad;">
+		<div class="logo">
+			<img src="img/images.png" alt="" width="72" height="57">
+		</div>		
+		<header class="check">
+			<h1>Checkout form</h1>
+		</header>
+		<div class="head">
+			<p>Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+		</div>
+		<div class="title">
+			<h2 class="little">Billing address</h2>
+			<h2 id="demo2">Your Card</h2>
+			<!-- <label for="button"></label> -->
+			<input type="text"  id="button" name="button" value="3">
+		</div>		
+		<div class="main">
+			<div class="container">
+				<form class="chhoti">
+					<div class="formrow">
+						<div class="frow">
+							<div class="formgroup">
+								<label for="firtn" class="margin">First name</label>
+								<input type="text" class="padding2" name="firstn">
+							</div>
+							<div class="formgroup">
+								<label for="secondn">second name</label>
+								<input type="text" class="padding2 name="secondn">
+							</div>
+						</div>						
+						<div class="formrow">
+							<label for="user">Username</label>
+							<input type="text" class="padding" name="user placeholder= "Username" required>
+						</div>
+						<div class="formrow">
+							<label for="email">Email <span>(optional)</span></label>
+							<input type="text" class="padding" name="email" placeholder= "Email" required>
+						</div>
+						<div class="formrow">
+							<label for="address">Address</label>
+							<input type="text" class="padding" name="address" placeholder= "1234 Main st" required>
+						</div>
+						<div class="formrow">
+							<label for="address">Address</label>
+							<input type="text" class="padding"  name="address" placeholder= "1234 Main st" required>
+						</div>
+						<div class="box1">
+							<label for="Country">Country</label>
+						  	<select id="Country" class="padding3"name="Country">
+							    <option value="Choose..">Choose..</option>
+							    <option value="Unitd state">Unitd state</option>
+						    </select>
+						    <label for="State">State</label>
+							<select id="State" class="padding3" name="State">
+								<option value="Choose..">"Choose..</option>
+								<option value="California">California</option>
+							</select>	
+							<label for="zip">zip</label>
+							<input type="text" class="padding3" name="zip">									
+						</div>
+						<br>
+						<hr>
+						<div><br>
+							<form>
+							  <input type="checkbox" id="testing" name="testing" >
+							  <label for="testing"> Shipping address is the same as my billing address</label><br>
+							  <input type="checkbox" id="test" name="test">
+							  <label for="test"> Save this information for next time</label>		
+							</form>
+						</div>
+						<br>
+						<hr>
+						<div><br>
+							<h3>Payment</h3>
+							<br>
+							<form>
+							  <input type="radio"  id="money" name="money" value="hundred">
+							  <label for="money">Credit card</label><br>
+							  <input type="radio"  id="paisa" name="money" value="5rp">
+							  <label for="paisa">Debit card</label><br>
+							  <input type="radio" id="pay" name="money" value="paid">
+							  <label for="pay">PayPal</label>
+							</form>
+						</div>
+						<div class="box2">
+							<label for="card">Name on card</label>
+							<input type="text" class="padding3" name="card">
+							<label for="no" >Credit card number</label>
+							<input type="text" class="padding3" name="no"><br>
+							<span>Full name as displayed on card</span>
+						</div>	
+						<div class="box3">
+							<label for="knlge">Expiration</label>
+							<input type="text" class="padding3" name="knlge">
+							<label for="machenical" >CVV</label>
+							<input type="text" class="padding3" name="machenical">
+						</div>
+						<br>
+						<hr>
+						<div class="submitbtn">
+							<input type="button" value="Continue to Checkout"/>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="container1">
+				<div class="list">
+					<ul>
+						<li>
+							<div class="left">
+								<h3>Product name</h3>
+								<p>Brief description </p>
+							</div>							
+							<div class="right">
+								<input type="text" name="disabled" class="mute-text" value="$12" disabled>
+							</div>							
+						</li>
+						<li>
+							<div class="left">
+								<h3>Second product</h3>
+								<p>Brief description</p>
+							</div>
+							<div class="right">
+								<input type="text"  name="disabled" class="mute-text" value="$8" disabled>
+							</div>
+						</li>
+						<li>
+							<div class="left">
+								<h3>Third item</h3>
+								<p>Brief description</p>
+							</div>
+							<div class="right">
+								<input type="text" name="disabled" class="mute-text" value="$5" disabled>
+							</div>
+						</li>
+						<li style="background-color: #faebd775; color: cadetblue;">
+							<div class="left">
+								<h3>Promo code</h3>
+								<p>EXAMPLECODE</p>
+							</div>							
+							<div class="right">
+								<input type="text" name="disabled" class="mute-text" value="-$5" disabled>
+							</div>
+						</li>
+						<li class="flex" id="wrap">
+							<div>
+								<p>Total (USD)</p>
+								<strong>$20</strong>
+							</div>
+						</li>
+					</ul>	
+				</div>
+					<form class="card">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="promo code">
+							<button class="btn2">Redeme</button>
+						</div>
+					</form>
+			</div>			
+		</div>		
+			<footer>© 2017–2022 Chhoti's Company <br>
+				<a href="#">Privacy</a>&nbsp;&nbsp;
+				<a href="#">Terms</a>&nbsp;&nbsp;
+				<a href="#">Support</a>&nbsp;&nbsp;
+			</footer>			
+		</div>
+	</body>
+</html>
