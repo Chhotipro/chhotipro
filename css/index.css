@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.navigation{
+	display: flex;
+	background-color: #c3bcbc5c;
+    width: 100%;
+    height: 4rem;
+}
+.navigation div{
+	    padding: 0.5rem 2rem;
+    	font-size: 2.5rem;
+}
+.navigation div small{
+	font-size: 1.2rem;
+    margin-left: -6px;
+    font-style: italic;
+}
+.dropdown_menu{	
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 1.2rem;
+   	justify-content: flex-end;
+    width: 80vw;
+    position: relative;
+}
+.dropdown_item{
+	display: none;
+	position: absolute;
+}
+body{
+	background-size: cover;
+    background-image: url(../img/hd_imge.png);
+    background-repeat: no-repeat;
+}
