@@ -192,6 +192,7 @@ header{
 } 
 Footer{
     flex-wrap: wrap;
+     text-align: center;
 }
 #footer_item{        
     text-align: center;
