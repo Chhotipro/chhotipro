@@ -199,13 +199,15 @@ table{
 		flex-wrap: wrap;
 	}
 	.footer{
-		    gap: 4rem
+		    gap: 5rem
 	}
 }
 @media (max-width: 992px) and (min-width: 759px){
 	.list_item{
 	        gap: 0.6rem;
 	}
-	
+	.footer{
+		    gap: 6rem
+	}
 }
 

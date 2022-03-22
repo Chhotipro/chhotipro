@@ -185,4 +185,30 @@
 		 }
 
 
+		 @media screen and (max-width: 576px){
+		 	.head-section2{
+		 		width: 100%;
+		 		justify-content:unset;
+		 		position: fixed;
+			 	top: 0;
+		 	}
+		 	.btn{		 		
+		 		position: relative;
+				right: -11rem;
+			    font-size: 16px!important;
+		 	}
+		 	.head-section2 div{
+		 		margin-left: 0;
+		 	}
+		 	.head-section2 a{
+		 		    padding-left: 0.9rem;
+		 	}
+		 	.p-section{
+		 		    padding: 5rem;
+		 		    width: 0;
+		 		    margin: 0;
+		 	}
+		 }
+
+
 
